@@ -39,7 +39,7 @@ def CheckInputInteger(user_in):
     elements = range (lower_range,upper_range + 1, 1)
     #
     L = [str(L) for L in elements]
-#   L = ["1","2","3","4","5","6","7","8","9","10"]
+#   L = ["1","2","3","4","5","6","7","8","9","10"]  This line is for testing the program
     A = False
     user_in = str(user_in)
     if user_in in L:
@@ -78,12 +78,12 @@ while guesses > 0:
         message = "Your guess is smaller than the number."
         print(message)
         guesses = guesses - 1
-        count =+1 
+        count +=1 
     if computer_guess < user_input  :
         message = "Your guess is greater than the number."
         print(message)
         guesses = guesses - 1
-        count =+1 
+        count +=1 
     if computer_guess == user_input  :
         message = "Congratulation you guessed it right!!"
         guesses = 0
